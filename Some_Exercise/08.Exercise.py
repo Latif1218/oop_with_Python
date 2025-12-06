@@ -26,6 +26,7 @@ class Person:
         self.__age = age
         
 person = Person()
+
 print(person.get_name())
 person.set_name("John")
 person.set_age(21)
