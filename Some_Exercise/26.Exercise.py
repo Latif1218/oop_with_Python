@@ -1,0 +1,24 @@
+
+
+# import textwrap
+
+# if __name__ == '__main__':
+#     string, max_width = input(), int(input())
+#     wrapped_lines = textwrap.wrap(string, max_width)
+#     for result in wrapped_lines:
+#         print(result)
+    
+    
+import textwrap
+
+def wrap1(string, max_width):
+    return '\n'.join(
+        [
+            string[i:i+max_width] for i in range(0, len(string), max_width)
+        ]
+    )
+
+if __name__ == '__main__':
+    string, max_width = input(), int(input())
+    result = wrap1(string, max_width)
+    print(result)
