@@ -45,7 +45,7 @@ if __name__ == '__main__':
     b = list(map(int, input().split()))
     c = max(b)
     print(c)
-    b = [x for x in b if x != c]
+    b = [x for x in b if x  != c]
     print(b)
     d = max(b)
     print(d)
